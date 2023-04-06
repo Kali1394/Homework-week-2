@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Form</title>
+  <style>
+    * {
+      background-color: azure;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      color: darkblue;
+      text-align: center;
+      border: 3px solid powderblue;
+      margin: 10px;
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Order form</h1><br><br>
+
+  <form action="/action_page.php" id="form1">
+    <label for="name">Your Name:</label>
+    <input type="text" placeholder="Enter Your Name" id="name" name="name">
+    <br>
+    <br>
+    <label for="eMail">Your E-mail:</label>
+    <input type="email" placeholder="Enter your e-mail" id="eMail" name="email">
+
+    <br>
+    <br>
+
+    <div>
+      <p>Choose your product:</p>
+
+      <input type="radio" id="product1" name="product" value="Product1">
+      <label for="product1">Product1</label>
+      <input type="radio" id="product2" name="product" value="Product2">
+      <label for="product2">Product2</label>
+      <input type="radio" id="product3" name="product" value="Product3">
+      <label for="product3">Product3</label>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+      <label for="date" style="margin-right: 15px;">Delivery date:</label>
+      <input type="date" id="date" name="date" value="date" style="margin-left: 12px">
+
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" placeholder="Select.." min="1" max="100">
+
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+      <label for="address">Your address:</label>
+      <input type="text" id="address" name="address" placeholder="Street address">
+
+    </div><br><br>
+
+    <div>
+      <label style="margin-right: 15px;">City:</label>
+      <select name="city">
+        <option value="city1">City1</option>
+        <option value="city2">City2</option>
+        <option value="city3">City3</option>
+
+      </select>
+    </div><br><br>
+
+    <div>
+      <label style="margin-right: 15px;">Region:</label>
+      <select name="region">
+        <option value="region1">Region1</option>
+        <option value="region2">Region2</option>
+        <option value="region3">Region3</option>
+
+      </select>
+    </div><br><br>
+
+    <input type="checkbox" id="notification"><label for="notification">Notify me by e-mail</label><br><br>
+
+    <div>
+      <label for="message" style="margin-right: 15px;">Type your comment here:</label>
+      <textarea id="message" type="text" placeholder="Enter your comment.."></textarea>
+
+    </div><br><br>
+
+    <input type="submit" value="Order">
+
+  </form>
+  
+</body>
+</html>
